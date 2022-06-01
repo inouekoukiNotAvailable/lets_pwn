@@ -1,0 +1,1 @@
+flag{aaaa_bbbb_cccc_dddd}
