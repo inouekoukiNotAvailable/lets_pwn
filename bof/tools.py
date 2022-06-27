@@ -4,7 +4,10 @@ binary_path = "./bof"
 
 elf = ELF(binary_path)
 
-io = process(binary_path)
+io = gdb.debug(binary_path, '''
+    b main
+    c
+    ''')
 
 win_addr = 0x401182
 
